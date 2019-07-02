@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Data input select</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/css1.css">
+</head>
+
+<body>
+    <div class="heading">
+        <div class="container-fluid header-text px-2 my-2">
+            Демо: Как вписывать перевод слов
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="demo-body page6">
+            <div class="jumbotron my-1 mx-1 py-3 text-center">
+                <span>
+                    Напишите перевод самостоятельно, или выберете перевод из предложенных словарем.
+                </span>
+            </div>
+            <div class="mx-3">
+                <form id="f" method="post" action="/page6">
+                    <div class="form-group">
+                        <label for="demo_single_words">Single words:</label>
+                        <div class="input-group d-flex justify-content-between">
+                            <input type="text" class="form-control my-1 mr-3 bg-dark text-light" value="cupboard"
+                                readonly>
+                            <input type="text" class="form-control my-1 ml-3 bg-light text-dark" name="translate"
+                                list="1w1">
+                            <datalist id="1w1">
+                                <option value="буфет">
+                            </datalist>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control my-1 mr-3 bg-dark text-light" value="sandwich"
+                                readonly>
+                            <input type="text" class="form-control my-1 ml-3 bg-light text-dark" name="translate"
+                                list="1w2">
+                            <datalist id="1w2">
+                                <option value="бутерброд">
+                            </datalist>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control my-1 mr-3 bg-dark text-light" value="pineapple"
+                                readonly>
+                            <input type="text" class="form-control my-1 ml-3 bg-light text-dark" name="translate"
+                                list="1w3">
+                            <datalist id="1w3">
+                                <option value="ананас">
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="demo_single_words">Two word phrases:</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control my-1 mr-3 bg-dark text-light" value="play football"
+                                readonly>
+                            <input type="text" class="form-control my-1 ml-3 bg-light text-dark" name="translate"
+                                list="2w1">
+                            <datalist id="2w1">
+                                <option value="играть в футбол">
+                            </datalist>
+                        </div>
+                        <div class="form-group">
+                            <label for="demo_three_words">Three word phrases:</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control my-1 mr-3 bg-dark text-light"
+                                    value="have music lesson" readonly>
+                                <input type="text" class="form-control my-1 ml-3 bg-light text-dark" name="translate"
+                                    list="3w1">
+                                <datalist id="3w1">
+                                    <option value="иметь уроки музыки">
+                                </datalist>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" class="form-control my-1 mr-3 bg-dark text-light"
+                                    value="play the piano" readonly>
+                                <input type="text" class="form-control my-1 ml-3 bg-light text-dark" name="translate"
+                                    list="3w2">
+                                <datalist id="3w2">
+                                    <option value="играть на пианино">
+                                </datalist>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="demo_four_words">Four word phrases:</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control my-1 mr-3 bg-dark text-light"
+                                    value="go to the park" readonly>
+                                <input type="text" class="form-control my-1 ml-3 bg-light text-dark" name="translate"
+                                    list="4w1">
+                                <datalist id="4w1">
+                                    <option value="ходить в парк">
+                                </datalist>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block mb-2 mt-5">Продолжить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="w3-container w3-teal">
+        <h1><b>Демо: Как вписывать перевод слов</b></h1>
+    </div>
+    <div class="sdemo">
+        <form id="f" method="post" action="/demo_translate">
+            <p class="w3-container"> Напишите перевод самостоятельно, или выберете перевод из предложенных словарем.<p>
+                    <label><b>
+                            Single words:</b></label>
+
+                    <table width="100%" cellpadding="5">
+                        <tr>
+                            <td><input
+                                    class=" slot_t w3-button w3-red w3-border w3-border-red w3-round-large input-text"
+                                    type="text" value="cupboard" readonly></td>
+                            <td> <input
+                                    class="translate slot_t w3-button w3-red w3-border w3-border-red w3-round-large input-text"
+                                    name="translate" t name="translate" list="1">
+                                <datalist id="1">
+                                    <option value="буфет"></option>
+                                </datalist></td>
+                        </tr>
+                        <tr>
+                            <td><input
+                                    class=" slot_t w3-button w3-red w3-border w3-border-red w3-round-large input-text"
+                                    type="text" value="sandwich" readonly></td>
+                            <td><input
+                                    class="translate slot_t w3-button w3-red w3-border w3-border-red w3-round-large input-text"
+                                    name="translate" t name="translate" list="2">
+                                <datalist id="2">
+                                    <option value="бутерброд"></option>
+                                </datalist></td>
+                        </tr>
+                        <tr>
+                            <td><input
+                                    class=" slot_t w3-button w3-red w3-border w3-border-red w3-round-large input-text"
+                                    type="text" value="pineapple" readonly></td>
+                            <td><input
+                                    class="translate slot_t w3-button w3-red w3-border w3-border-red w3-round-large input-text"
+                                    name="translate" t name="translate" list="3">
+                                <datalist id="3">
+                                    <option value="ананас"></option>
+                                </datalist></td>
+                        </tr>
+                    </table>
+
+                    <label><b>Two word phrases:</b></label>
+                    <table width="100%" cellpadding="5">
+                        <tr>
+                            <td><input
+                                    class="slot_t w3-button w3-blue w3-border w3-border-blue w3-round-large input-text"
+                                    type="text" value="play football" readonly></td>
+                            <td><input
+                                    class="translate slot_t w3-button w3-blue w3-border w3-border-blue w3-round-large input-text"
+                                    name="translate" t name="translate" list="4">
+                                <datalist id="4">
+                                    <option value="играть в футбол"></option>
+                                </datalist></td>
+                        </tr>
+
+                    </table>
+
+                    <label><b>Three word phrases:</b></label>
+                    <table width="100%" cellpadding="5">
+                        <tr>
+                            <td><input
+                                    class=" slot_t w3-button w3-green w3-border w3-border-green w3-round-large input-text"
+                                    type="text" value="have music lesson" readonly></td>
+                            <td><input
+                                    class="translate slot_t w3-button w3-green w3-border w3-border-green w3-round-large input-text"
+                                    name="translate" t name="translate" list="5">
+                                <datalist id="5">
+                                    <option value="иметь уроки музыки"></option>
+                                </datalist></td>
+                        </tr>
+                        <tr>
+                            <td><input
+                                    class="slot_t w3-button w3-green  w3-border w3-border-green w3-round-large input-text"
+                                    type="text" value="play the piano" readonly></td>
+                            <td><input
+                                    class="translate slot_t w3-button w3-green w3-border w3-border-green w3-round-large input-text"
+                                    name="translate" t name="translate" list="6">
+                                <datalist id="6">
+                                    <option value="играть на пианино"></option>
+                                </datalist></td>
+                        </tr>
+                    </table>
+
+                    <label><b>Four word phrases:</b></label>
+                    <table width="100%" cellpadding="5">
+                        <tr>
+                            <td><input
+                                    class="translate slot_t w3-button w3-purple  w3-border w3-border-purple w3-round-large input-text"
+                                    type="text" value="go to the park" readonly></td>
+                            <td><input
+                                    class="translate slot_t w3-button w3-purple w3-border w3-border-purpleы w3-round-large input-text"
+                                    name="translate" t name="translate" list="7">
+                                <datalist id="7">
+                                    <option value="ходить в парк"></option>
+                                </datalist></td>
+                        </tr>
+                    </table>
+                    <p><input class="  w3-button w3-white w3-border w3-border-black w3-round-large" type="submit"
+                            value="Продолжить"></p>
+        </form>
+    </div> -->
+</body>
+
+</html>

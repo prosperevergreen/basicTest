@@ -42,13 +42,68 @@ html {
     margin: 1rem auto;
 }
 
-/* page2 and page3 */
+/* page2 and page3 and page4*/
 
 .level-button {
     margin: 1rem auto;
     min-height: 5rem;
 }
 
+
+/* page 5 */
+.demo-body{
+    font-size: 1.5rem;
+    width: 800px;
+    margin: 0 auto;
+}
+.demo-body .jumbotron{
+    background: #e5fcf4;
+    font: 1.2em sans-serif;
+}
+
+#note{
+    color: red;
+    font-size: 1rem;
+}
+
+#demo_single_words{
+    background-color: #85a9d8;
+    min-height: 3rem;
+}
+
+#demo_two_words{
+    background-color: #e7e18f;
+    min-height: 3rem;
+}
+
+#demo_three_words{
+    background-color: #e78fdb;
+    min-height: 3rem;
+}
+
+#demo_four_words{
+    background-color: #e7998f;
+    min-height: 3rem;
+}
+
+textarea:disabled{
+    color: black !important;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+/* page6 */
+.form-group input[type="text"]{
+    background-color: #ebf7f3;
+    padding: 1.3rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 1.3rem !important;
+}
+
+/* .rounded{
+    border
+} */
 
 
 .btn-light {
@@ -103,6 +158,10 @@ html {
     height: 50%;
 }
 
+.btn {
+    font-size: 1.7rem;
+}
+
 
 
 /* Extra large devices (large desktops, 1200px and down) */
@@ -124,9 +183,11 @@ html {
     html {
         font-size: 1.6rem;
     }
-
     .header-text{
         font-size: 1.6rem;
+    }
+    .demo-body{
+        width: 100%;
     }
 
 }

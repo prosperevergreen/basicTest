@@ -14,7 +14,7 @@ app.get("/", function (req, res) {
 
 app.post("/", (req, res) => {
     console.log(req.body);
-    res.redirect("page2");
+    res.redirect("/page2");
 });
 
 app.get("/page2", function (req, res) {
@@ -23,7 +23,7 @@ app.get("/page2", function (req, res) {
 
 app.post("/page2", (req, res) => {
     console.log(req.body);
-    res.redirect("page3");
+    res.redirect("/page3");
 });
 
 app.get("/page3", function (req, res) {
@@ -32,6 +32,34 @@ app.get("/page3", function (req, res) {
 
 app.post("/page3", (req, res) => {
     console.log(req.body);
+    res.redirect("/page4");
+});
+
+app.get("/page4", function (req, res) {
+    res.render("page4");
+});
+
+app.post("/page4", (req, res) => {
+    console.log(req.body);
+    res.redirect("/page5");
+});
+
+app.get("/page5", function (req, res) {
+    res.render("page5");
+});
+
+app.post("/page5", (req, res) => {
+    console.log(req.body);
+    res.redirect("/page6");
+});
+
+app.get("/page6", function (req, res) {
+    res.render("page6");
+});
+
+app.post("/page6", (req, res) => {
+    console.log(req.body);
+    // res.redirect("/page6");
 });
 
 
